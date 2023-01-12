@@ -41,16 +41,25 @@
     <div></div>
   </div>
   <div id="alert-snackbar"> <!-- AlertBox -->
-    <span><b>Alert: </b>You have unread messages</span><button id="alert-close">&#10006;</button>
+    <span><b>Alert: </b>You have unread messages</span>
+    <button id="alert-close">&#10006;</button>
   </div>
   <div> <!-- Widgets -->
     <section class="widget" id="traffic"> <!-- Traffic -->
       <h3>Traffic</h3>
       <menu id="traffic-menu">
-        <li><button class="active">Hourly</button></li>
-        <li><button>Daily</button></li>
-        <li><button>Weekly</button></li>
-        <li><button>Monthly</button></li>
+        <li>
+          <button class="active">Hourly</button>
+        </li>
+        <li>
+          <button>Daily</button>
+        </li>
+        <li>
+          <button>Weekly</button>
+        </li>
+        <li>
+          <button>Monthly</button>
+        </li>
       </menu>
       <div><!-- chart --></div>
     </section>
@@ -83,10 +92,33 @@
     <section class="widget" id="new-members">
       <h3>New members</h3>
       <ul>
-        <li>Victoria</li>
-        <li>Dale</li>
-        <li>Dawn</li>
-        <li>Dan</li>
+        <li>
+          <img src="images/member-1.jpg" alt="Member 1">
+          <p> Victoria Chambers </p>
+          <a href="mailto:victoria.chambers80@example.com">victoria.chambers80@example.com</a>
+          <p>10/15/20</p>
+        </li>
+
+        <li>
+          <img src="images/member-2.jpg" alt="Member 2">
+          <p> Dale Byrd </p>
+          <a href="mailto:dale.bryd52@example.com">dale.bryd52@example.com</a>
+          <p>10/15/20</p>
+        </li>
+
+        <li>
+          <img src="images/member-3.jpg" alt="Member 3">
+          <p> Dawn Wood </p>
+          <a href="mailto:dawn.wood16@example.com">dawn.wood16@example.com</a>
+          <p>10/15/20</p>
+        </li>
+
+        <li>
+          <img src="images/member-4.jpg" alt="Member 4">
+          <p> Dan Oliver </p>
+          <a href="mailto:dan.oliver82@example.com">dan.oliver82@example.com</a>
+          <p>10/15/20</p>
+        </li>
       </ul>
     </section>
 
@@ -95,10 +127,29 @@
     <section class="widget" id="recent-activity">
       <h3>Recent activity</h3>
       <ul>
-        <li>Victoria</li>
-        <li>Dale</li>
-        <li>Dawn</li>
-        <li>Dan</li>
+        <li>
+          <img src="images/member-1.jpg" alt="Member 1">
+          <p>Victoria Chambers commented on <b>WebApp's SEO Tips</b></p>
+          <p>5 hours ago</p>
+        </li>
+
+        <li>
+          <img src="images/member-2.jpg" alt="Member 2">
+          <p>Dave Byrd liked the post <b>Facebook&apos;s Changes for 2021</b></p>
+          <p>5 hours ago</p>
+        </li>
+
+        <li>
+          <img src="images/member-3.jpg" alt="Member 3">
+          <p>Dawn Wood commented on <b>Facebook&apos;s Changes for 2021</b></p>
+          <p>5 hours ago</p>
+        </li>
+
+        <li>
+          <img src="images/member-4.jpg" alt="Member 4">
+          <p>Dan Oliver posted <b>WebApp's SEO Tips</b></p>
+          <p>1 day ago</p>
+        </li>
       </ul>
     </section>
 
@@ -106,19 +157,47 @@
 
     <section class="widget" id="message-form">
       <h3>Message user</h3>
-      <!-- user input -->
-      <!-- message textarea input -->
-      <!-- send button -->
+      <fieldset>
+        <form>
+          <label for="user"></label>
+          <input type="text" id="user" name="user" placeholder="Search for User">
+          <label for="message"></label>
+          <textarea id="message" name="message" placeholder="Message for User"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </fieldset>
     </section>
 
     <hr>
 
     <section class="widget" id="settings">
       <h3>Settings</h3>
-      <!-- Send Email Notifications + Toggle Checkbox  -->
-      <!-- Set Profile to  + Toggle Checkbox  -->
-      <!-- Select Timezone Select Input  -->
-      <!-- Save Button -- Cancel Button  -->
+
+      <fieldset>
+        <label class="toggle">
+          <span class="toggle-label">Send Email Notifications</span>
+          <input class="toggle-checkbox" type="checkbox" checked>
+          <span class="toggle-switch"></span>
+        </label>
+
+        <label class="toggle">
+          <span class="toggle-label">Set Profile to Public</span>
+          <input class="toggle-checkbox" type="checkbox" checked>
+          <span class="toggle-switch"></span>
+        </label>
+
+        <label>
+          <select>
+            <option value="">Select Timezone</option>
+            <option value="1">Timezone 1</option>
+            <option value="2">Timezone 2</option>
+          </select>
+        </label>
+        <div>
+          <button>Save</button>
+          <button>Cancel</button>
+        </div>
+      </fieldset>
     </section>
   </div>
 </main>
