@@ -1,0 +1,130 @@
+@import 'base';
+@import 'utilities';
+
+body {
+  display: grid;
+}
+
+header {
+  color: white;
+  height: 60px;
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header h5 {
+  font-size: 1.25em;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header div svg:nth-child(1) {
+  color: white;
+}
+
+header div img:nth-child(2) {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+}
+
+nav {
+  background-color: $secondary-color;
+}
+
+menu {
+  margin: 0;
+}
+
+menu {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+menu li {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+menu li img {
+  height: 32px;
+  width: 32px;
+}
+
+.page-tab {
+  display: flex;
+  margin-bottom: 10px;
+
+  h3 {
+    font-size: 1.25em;
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+  div {
+    background-color: $main-background-color;
+    border-left: 2px solid $main-border-color;
+    border-bottom: 2px solid $main-border-color;
+    width: 100%;
+  }
+}
+
+#alert-snackbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+
+  button {
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    padding: 0;
+  }
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  h3 {
+    text-transform: uppercase;
+  }
+}
+
+#traffic-menu {
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    color: inherit;
+    background-color: inherit;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+
+    &.active {
+      color: white;
+      background-color: $primary-green-color;
+    }
+  }
+}
+
+#bell-icon {
+  width: 20px;
+  height: 20px;
+}
