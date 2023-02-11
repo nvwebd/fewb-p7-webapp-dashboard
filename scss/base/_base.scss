@@ -1,0 +1,24 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+svg {
+  fill: white;
+}
+
+menu li svg {
+  fill: white;
+}

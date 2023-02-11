@@ -1,0 +1,41 @@
+@import '../utilities/variables';
+
+#settings fieldset {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #timezone {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: $main-background-color;
+    border: 2px solid $main-border-color;
+    border-radius: 5px;
+  }
+
+  #settings-action-buttons {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      padding: 10px;
+      border: 2px solid $main-border-color;
+      border-radius: 5px;
+      width: 140px;
+
+      &:first-child {
+        background-color: $primary-color;
+        color: white;
+      }
+
+      &:last-child {
+        background-color: $secondary-background-color;
+        color: white;
+      }
+    }
+  }
+}
