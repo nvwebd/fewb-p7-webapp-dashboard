@@ -313,8 +313,22 @@ template {
   font-family: "ABeeZee", sans-serif;
 }
 
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 ul {
   list-style: none;
+}
+
+svg {
+  fill: white;
+}
+
+menu li svg {
+  fill: white;
 }
 
 /* --- TYPOGRAPHY STYLES --- */
@@ -379,6 +393,105 @@ a {
   top: 2px;
 }
 
+.widget {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.widget h3 {
+  text-transform: uppercase;
+}
+.widget ul {
+  padding: 0;
+  margin: 0;
+}
+.widget ul li {
+  margin: 15px 0;
+  text-align: center;
+  padding: 0 15px;
+}
+.widget ul li a {
+  color: #7477BF;
+}
+.widget ul li img {
+  border-radius: 50%;
+}
+.widget ul li address {
+  margin-bottom: 15px;
+}
+.widget ul li:not(:last-child) {
+  border-bottom: 1px solid lightgrey;
+}
+
+#message-form fieldset form {
+  display: flex;
+  flex-direction: column;
+}
+#message-form fieldset form #user, #message-form fieldset form #message {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #F7F7F7;
+  border: 2px solid #CCCCCC;
+  border-radius: 5px;
+}
+#message-form fieldset form button[type=submit] {
+  padding: 10px;
+  border: 2px solid #CCCCCC;
+  border-radius: 5px;
+  background-color: #7477BF;
+  text-transform: uppercase;
+  color: white;
+}
+
+#settings fieldset {
+  display: flex;
+  flex-direction: column;
+}
+#settings fieldset label {
+  display: flex;
+  justify-content: space-between;
+}
+#settings fieldset #timezone {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #F7F7F7;
+  border: 2px solid #CCCCCC;
+  border-radius: 5px;
+}
+#settings fieldset #settings-action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+#settings fieldset #settings-action-buttons button {
+  padding: 10px;
+  border: 2px solid #CCCCCC;
+  border-radius: 5px;
+  width: 140px;
+}
+#settings fieldset #settings-action-buttons button:first-child {
+  background-color: #7477BF;
+  color: white;
+}
+#settings fieldset #settings-action-buttons button:last-child {
+  background-color: #999999;
+  color: white;
+}
+
+.social-widget {
+  display: flex;
+  align-items: center;
+  border: 2px solid #CCCCCC;
+  border-radius: 5px;
+  background-color: #F7F7F7;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+.social-widget aside {
+  height: 54px;
+  width: 54px;
+  margin-right: 15px;
+}
+
 body {
   display: grid;
 }
@@ -400,10 +513,6 @@ header h5 {
 header div {
   display: flex;
   align-items: center;
-}
-
-header div svg:nth-child(1) {
-  color: white;
 }
 
 header div img:nth-child(2) {
@@ -430,13 +539,12 @@ menu {
 
 menu li {
   display: flex;
-  align-items: center;
   height: 40px;
+  padding: 10px 0;
 }
 
-menu li img {
-  height: 32px;
-  width: 32px;
+menu li svg {
+  margin: 0 20px;
 }
 
 .page-tab {
@@ -470,15 +578,6 @@ menu li img {
   background-color: inherit;
   border: none;
   padding: 0;
-}
-
-.widget {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-.widget h3 {
-  text-transform: uppercase;
 }
 
 #traffic-menu {

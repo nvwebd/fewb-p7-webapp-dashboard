@@ -25,10 +25,6 @@ header div {
   align-items: center;
 }
 
-header div svg:nth-child(1) {
-  color: white;
-}
-
 header div img:nth-child(2) {
   height: 34px;
   width: 34px;
@@ -53,13 +49,12 @@ menu {
 
 menu li {
   display: flex;
-  align-items: center;
   height: 40px;
+  padding: 10px 0;
 }
 
-menu li img {
-  height: 32px;
-  width: 32px;
+menu li svg {
+  margin: 0 20px;
 }
 
 .page-tab {
@@ -97,16 +92,6 @@ menu li img {
   }
 }
 
-.widget {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-
-  h3 {
-    text-transform: uppercase;
-  }
-}
-
 #traffic-menu {
   display: flex;
   justify-content: space-between;
@@ -128,4 +113,8 @@ menu li img {
 #bell-icon {
   width: 20px;
   height: 20px;
+}
+
+.social-svgs {
+
 }
